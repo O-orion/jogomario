@@ -7,7 +7,7 @@ import imgNuvem from '../assets/clouds.png'
 function Jogo() {
   return (
     <div className='jogo'>
-        <img src={imgNuvem} alt="" />
+        <img className='nuvens' src={imgNuvem} alt="" />
     </div>
   )
 }
