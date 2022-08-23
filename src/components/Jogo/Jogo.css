@@ -1,11 +1,75 @@
 .jogo{
     background-color: #9be5e4;
     height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
 }
 
 .nuvens {
     width: 200px;
     position: absolute;
     top: 30px;
-    left: 50%;
+ 
+    animation-name: direita-para-esquerda;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.mario-pulo{
+    animation: mario-pulo 0.7s;
+}
+
+.cano {
+    width: 30px;
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+
+    animation-name: direita-para-esquerda;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.mario {
+    height: 100px;
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+}
+
+.chao{
+    background-color: limegreen;
+    height: 30px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+@keyframes direita-para-esquerda {
+    from {
+        right: -50px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+
+@keyframes mario-pulo {
+
+    from{
+        bottom: 30px;
+    }
+
+    50% {
+        bottom: 150px;
+    }
+    to{
+        bottom: 30px;
+    }
+
 }
