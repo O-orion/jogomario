@@ -11,7 +11,7 @@ import imgMario from '../assets/mario.gif'
 import imgGameOver from '../assets/game-over.png'
 
 function Jogo() {
-  
+
   // Estados
   const [ estaPulando, setEstaPulando ] = useState(false)
   const [ estaMorto, setEstaMorto ] = useState(false);
@@ -92,6 +92,7 @@ function Jogo() {
 
   return (
     <div className='jogo'>
+        <p className='pontos'>Pontos: {pontos}</p>
         <img className={"nuvens " + pararAnimacao} src={imgNuvem} alt="Imagem de nuvens" />
         <img ref={canoRef} className={ "cano " + pararAnimacao } src={imgCano} alt="Imagem de cano" />
         <img ref={marioRef} className={ marioClassName } src={marioImagem} alt="Imagem do mário" />

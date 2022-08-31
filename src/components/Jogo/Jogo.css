@@ -6,10 +6,32 @@
     position: relative;
 }
 
+.pontos {
+
+    background-color: #32cd32;
+    color: rgb(255, 255, 255);
+
+    padding: 10px;
+    border: 2px solid rgb(44, 44, 44);
+    border-radius: 5px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    width: auto;
+
+    display: inline-block;
+    position: absolute;
+
+    left: 90px;
+    top: 10px;
+    z-index: 55;
+}
+
 .nuvens {
     width: 200px;
     position: absolute;
-    top: 30px;
+    top: 90px;
  
     animation-name: direita-para-esquerda;
     animation-duration: 5s;
@@ -61,7 +83,6 @@
         right: 100%;
     }
 }
-
 
 @keyframes mario-pulo {
 
