@@ -33,6 +33,10 @@
     animation-timing-function: linear;
 }
 
+.parar-animacao {
+    animation-play-state: paused;
+}
+
 .mario {
     height: 100px;
     position: absolute;
